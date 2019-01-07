@@ -20,9 +20,9 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
   val dslink = UrlFormListenerDSLinkHandler()
 
-  val brk = "https://localhost:8443/conn"
+//  val brk = "https://localhost:8443/conn"
 
-  val provider = DSLinkFactory.generate(Array("--broker", brk), dslink)
+  val provider = DSLinkFactory.generate(Array("--broker", sys.env("DSLINK_BROKER")), dslink)
   provider.start()
 
 

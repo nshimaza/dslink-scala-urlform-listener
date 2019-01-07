@@ -7,7 +7,7 @@
     "name": "Naoto Shimazaki",
     "email": "nshimaza@cisco.com"
   },
-  "main": "bin/dslink-scala-urlform-listener",
+  "main": "bin/dslink-java-urlform-listener",
   "repository": {
     "type": "git",
     "url": "https://github.com/nshimaza/dslink-scala-urlform-listener"

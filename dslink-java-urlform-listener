@@ -1,0 +1,26 @@
+#! /usr/bin/env sh
+while [ $# -gt 0 ]; do
+    case $1 in
+        --broker)
+        export DSLINK_BROKER="$2"
+        ;;
+        --token)
+        export DSLINK_TOKEN="$2"
+        ;;
+        --name)
+        export DSLINK_NAME="$2"
+        ;;
+        --nodes)
+        export DSLINK_NODES="$2"
+        ;;
+        --key)
+        export DSLINK_KEY="$2"
+        ;;
+        --log)
+        export export DSLINK_LOG="$2"
+        ;;
+    esac
+    shift
+done
+
+JAVA_OPTS=-Dplay.http.secret.key=foobar ./playBinary
