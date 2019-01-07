@@ -73,3 +73,16 @@ repositories {
         layout "ivy"
     }
 }
+
+model {
+    distributions {
+        playBinary {
+            contents {
+                from("dslink.json")
+                from("dslink-java-urlform-listener") {
+                    into "bin"
+                }
+            }
+        }
+    }
+}
