@@ -1,0 +1,46 @@
+{
+  "name": "dslink-scala-urlform-listener",
+  "version": "0.1",
+  "description": "Accept HTTP POST of URL encoded form and publish it",
+  "license": "Cisco Sample Code License",
+  "author": {
+    "name": "Naoto Shimazaki",
+    "email": "nshimaza@cisco.com"
+  },
+  "main": "bin/dslink-scala-urlform-listener",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nshimaza/dslink-scala-urlform-listener"
+  },
+  "bugs": {
+    "url": "https://github.com/nshimaza/dslink-scala-urlform-listener/issues"
+  },
+  "configs": {
+    "name": {
+      "type": "string",
+      "default": "UrlFormListener"
+    },
+    "broker": {
+      "type": "url"
+    },
+    "token": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "path",
+      "default": "nodes.json"
+    },
+    "key": {
+      "type": "path",
+      "default": ".key"
+    },
+    "log": {
+      "type": "enum",
+      "default": "info"
+    },
+    "handler_class": {
+      "type": "string",
+      "default": "controllers.UrlFormListenerDSLinkHandler"
+    }
+  }
+}

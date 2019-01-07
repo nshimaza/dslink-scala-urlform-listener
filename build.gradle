@@ -53,10 +53,12 @@ model {
 
 dependencies {
     play "com.typesafe.play:play-guice_$scalaVersion:$playVersion"
-    play "com.typesafe.play:play-logback_$scalaVersion:$playVersion"
+//    play "com.typesafe.play:play-logback_$scalaVersion:$playVersion"
     play "com.typesafe.play:filters-helpers_$scalaVersion:$playVersion"
 
     playTest "org.scalatestplus.play:scalatestplus-play_$scalaVersion:3.1.2"
+
+    play group: "org.iot-dsa", name: "dslink", version: "0.20.1"
 }
 
 repositories {
