@@ -1,5 +1,6 @@
 # dslink-scala-urlform-listener
-DSLink listening HTTP POST with application/x-www-form-urlencoded body.
+This DSLink listens HTTP POST with application/x-www-form-urlencoded body and
+publishes it in JSON form at `Posted` Node under the DSLink.
 
 ## Build
 
