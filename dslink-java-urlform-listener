@@ -23,4 +23,4 @@ while [ $# -gt 0 ]; do
     shift
 done
 
-JAVA_OPTS=-Dplay.http.secret.key=foobar ./playBinary
+JAVA_OPTS=-Dplay.http.secret.key=foobar bin/playBinary
