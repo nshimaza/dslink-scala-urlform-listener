@@ -22,7 +22,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
 //  val brk = "https://localhost:8443/conn"
 
-  val provider = DSLinkFactory.generate(Array("--broker", sys.env("DSLINK_BROKER")), dslink)
+  val provider = DSLinkFactory.generate(Array("--broker", sys.env("DSLINK_BROKER"), "--token", sys.env("DSLINK_TOKEN")), dslink)
   provider.start()
 
 
